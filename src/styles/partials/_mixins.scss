@@ -8,7 +8,8 @@
 
 @mixin reset-anchor {
     text-decoration: none;
-    color: $primary-background-color;
+    cursor: pointer;
+    color: $primary-text-color;
 }
 
 @mixin layout-margin ($side-margin: 1.6rem) {
