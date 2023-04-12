@@ -1,41 +1,55 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
-//@use '../../styles/partials/typography' as *;
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 .header {
-
+    box-sizing: border-box;
     @include flex();
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    background-color: $primary-background-color;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
     font-size: 3.2rem;
-    padding: 4rem 4.5rem;
+    padding: 0 3.2rem;
     position: fixed;
+    top: 0;
     width: 100%;
     height: 14%;
-    z-index: 200;
+    z-index: 1;
+    overflow: visible;
 
     &__logo {
         @include reset-anchor;
-        font-size: 3.5rem;
-        transition: all .5s ease-in-out;
-    
-        &:hover {
-            color: red;
-        }
+        
+    }
 
-        &:active {
-            font-size: 3.2rem;
-        }
-    
+    &__image {
+        height: 7rem;
+        width: 10rem;
+        position: relative;
+        top: 0.5rem;
     }
 
     &__nav {
+        display: none;
 
+        @include tablet {
+            display: block;
+        }
+    }
+
+    &__mobile {
+        font-size: 4rem;
+        cursor: pointer;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__list {
+
         @include reset-list;
         @include flex();
         gap: 2rem;
@@ -47,17 +61,53 @@
 
     &__link {
         @include reset-anchor;
-        color: #2d2e32;
         font-weight: 600;
         transition: all .5s;
     
         &:hover {
-            color: #147efb;
+            color: $primary-hover-color;
         }
 
         &:active {
             font-size: 2.8rem;
             margin: 0 0.6rem;
+            color: $secondary-hover-color;
         }
     }
+
+    &__mobile-nav {
+        @include flex();
+        top: 0;
+        align-items: center;
+        background-color: $primary-background-color;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        position: fixed;
+        text-align: center;
+        transition: all .3s ease-in-out;
+        z-index: 2;
+    }
+
+    &__mobile-close {
+        position: absolute;
+        right: 5rem;
+        top: 6rem;
+    }
+
+    &__mobile-list {
+        display: flex;
+        flex-direction: column;
+        font-size: 3.2rem;
+        gap: 5rem;
+        list-style: none;
+    }
+}
+
+.closed-menu {
+    left: -100% !important;
+}
+
+.open-menu {
+    left: 0% !important;
 }

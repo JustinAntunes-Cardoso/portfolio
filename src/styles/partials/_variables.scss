@@ -1,23 +1,19 @@
 //Font
-$font-stack: "Nunito";
+$font-title: "Cormorant SC";
+$font-stack: "Cormorant Garamond";
 
 //primary colours
-$primary-text-color: #323232;
-$primary-background-color: #FFFFFF;
-$primary-cta-color: #FBC204;
-$primary-border-color: #F59B06;
-$secondary-text-color: #AFAFAF;
-
+$primary-text-color: #966B28;
+$primary-background-color: #262626;
+$primary-border-color: #BD6F09;
+$primary-hover-color: #E6C068;
 
 //secondary colours
-$shadow-color: #000000;
+$secondary-text-color: #ebebeb;
 $secondary-background-color: #DDDDDD;
 $secondary-border-color: #BD6F09;
-$cta-hover-color: #FCD730;
-$divider-form-color: #E1E1E1;
-$input-background-color: #FAFAFA;
-$error-color: #D91818;
-
+$secondary-hover-color: #F1EAAE;
+$shadow-color: #000000;
 
 //Responsive breakpoints
 $mobileL-breakpoint: 425px;
