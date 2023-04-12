@@ -1,6 +1,7 @@
 @use "./styles/partials/resets" as *;
 @use "./styles/partials/variables" as *;
+@use './styles/partials/typography' as *;
 
 .App {
-    background-color: $primary-background-color;
+    background-image: linear-gradient(to bottom right, #101010, #262626, #323232, #8e8e8e);
 }
