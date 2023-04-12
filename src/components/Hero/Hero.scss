@@ -103,6 +103,24 @@
 		}
 	}
 
+	&__link-container {
+		@include flex();
+		gap: 3rem;
+	}
+
+	&__link {
+		transition: all 0.5s;
+		font-size: 6rem;
+
+		&:hover {
+			color: $secondary-text-color;
+		}
+
+		&:active {
+			font-size: 2rem;
+		}
+	}
+
 	&__tech-stack-container {
         @include flex(column);
         align-items: center;
@@ -111,7 +129,7 @@
 
 	&__tech-stack {
         width: fit-content;
-        font-size: 3.2rem;
+        font-size: 3.6rem;
         border-bottom: 2px solid $primary-text-color;
         padding-bottom: 1rem;
         margin-bottom: 3rem;
@@ -130,15 +148,15 @@
         @include flex();
         justify-content: center;
         align-items: center;
-        width: 6.5rem;
-        height: 6.5rem;
+        width: 10rem;
+        height: 10rem;
         background-color: $primary-background-color;
         border-radius: 50%;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 
         & img {
             height: auto;
-            width: 3.4rem;
+            width: 4.4rem;
         }
     }
 }

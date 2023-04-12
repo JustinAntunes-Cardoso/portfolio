@@ -11,6 +11,9 @@ import sass from '../../assets/images/sass.svg';
 import node from '../../assets/images/node.svg';
 import mysql from '../../assets/images/mysql.svg';
 
+const linkedIn = 'https://www.linkedin.com/in/justin-antunes-cardoso/';
+const gitHub = 'https://github.com/JustinAntunes-Cardoso'
+
 const Hero = () => {
 	return (
 		<section
@@ -26,7 +29,11 @@ const Hero = () => {
 					<div className='hero__text-image-container'>
 						<div className='hero__text-container'>
 							<h1 className='hero__title'>Full-Stack Developer</h1>
-							<p className='hero__text'>Greetings and salutations! I'm Justin Antunes-Cardoso. A innovative Full-Stack Software Developer based in Mississauga, ON, Canada. 📍</p>
+							<p className='hero__text'>
+								Greetings and salutations! I'm Justin Antunes-Cardoso. A
+								innovative Full-Stack Software Developer based in Mississauga,
+								ON, Canada. 📍
+							</p>
 						</div>
 						<div className='hero__image-container'>
 							<img
@@ -36,18 +43,82 @@ const Hero = () => {
 							/>
 						</div>
 					</div>
+					<div className='hero__link-container'>
+						<a
+							aria-label='linkedin'
+							rel='noreferrer'
+							target='_blank'
+							href={linkedIn}>
+							<i className='hero__link fa-brands fa-linkedin'></i>
+						</a>
+						<a
+							aria-label='github'
+							rel='noreferrer'
+							target='_blank'
+							href={gitHub}>
+							<i className='hero__link fa-brands fa-github'></i>
+						</a>
+					</div>
 				</article>
 				<aside className='hero__tech-stack-container'>
 					<h3 className='hero__tech-stack'>Tech Stack</h3>
 					<ul className='hero__tech-stack-images'>
-						<li className='hero__tech-stack-item'><img src={html} title="HTML5" alt="program_img" /></li>
-						<li className='hero__tech-stack-item'><img src={css} title="CSS3" alt="program_img" /></li>
-						<li className='hero__tech-stack-item'><img src={js} title="JavaScript" alt="program_img" /></li>
-						<li className='hero__tech-stack-item'><img src={ts} title="TypeScript" alt="program_img" /></li>
-						<li className='hero__tech-stack-item'><img src={react} title="React JS" alt="program_img" /></li>
-						<li className='hero__tech-stack-item'><img src={sass} title="Sass" alt="program_img" /></li>
-						<li className='hero__tech-stack-item'><img src={node} title="Node JS" alt="program_img" /></li>
-						<li className='hero__tech-stack-item'><img src={mysql} title="MySQL" alt="program_img" /></li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={html}
+								title='HTML5'
+								alt='program_img'
+							/>
+						</li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={css}
+								title='CSS3'
+								alt='program_img'
+							/>
+						</li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={js}
+								title='JavaScript'
+								alt='program_img'
+							/>
+						</li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={ts}
+								title='TypeScript'
+								alt='program_img'
+							/>
+						</li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={react}
+								title='React JS'
+								alt='program_img'
+							/>
+						</li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={sass}
+								title='Sass'
+								alt='program_img'
+							/>
+						</li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={node}
+								title='Node JS'
+								alt='program_img'
+							/>
+						</li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={mysql}
+								title='MySQL'
+								alt='program_img'
+							/>
+						</li>
 					</ul>
 				</aside>
 			</div>
