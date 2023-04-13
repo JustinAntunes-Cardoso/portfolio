@@ -4,7 +4,7 @@ import codeBG from '../../assets/images/code-background.jpg';
 
 const About = () => {
 	return (
-		<section className='about'>
+		<section id='about' className='about'>
 			<aside className='about__image-container'>
 				<img
 					className='about__image'
@@ -20,7 +20,7 @@ const About = () => {
 				</h1>
 				<p className='about__text'>
 					As a Full-Stack Software Developer, I possess a diverse arsenal of
-					skills in HTML, CSS, JavaScript, TypeScript, React, Node.js, MySQL,
+					skills in HTML, CSS, JavaScript, TypeScript, React, SCSS, Node.js, MySQL,
 					Linux & Python. I'm equipped with a unique combination of technical
 					knowledge and problem-solving skills, enabling me to develop efficient
 					and effective software solutions. My ability to communicate complex

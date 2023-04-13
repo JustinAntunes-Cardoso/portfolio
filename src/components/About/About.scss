@@ -6,7 +6,6 @@
     @include flex(column);
     gap: 5rem;
     align-items: center;
-    padding-top: 12rem;
 
     @include tablet {
         @include flex();
