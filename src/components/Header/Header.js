@@ -105,6 +105,7 @@ const Header = () => {
 					<li className='header__list-item'>
 						<a
 							className='header__link'
+							onClick={handleOnClickClose}
 							href='#home'>
 							Home
 						</a>
@@ -112,6 +113,7 @@ const Header = () => {
 					<li className='header__list-item'>
 						<a
 							className='header__link'
+							onClick={handleOnClickClose}
 							href='#about'>
 							About
 						</a>
@@ -119,6 +121,7 @@ const Header = () => {
 					<li className='header__list-item'>
 						<a
 							className='header__link'
+							onClick={handleOnClickClose}
 							href='#projects'>
 							Projects
 						</a>
@@ -126,6 +129,7 @@ const Header = () => {
 					<li className='header__list-item'>
 						<a
 							className='header__link'
+							onClick={handleOnClickClose}
 							href='#contact'>
 							Contact
 						</a>

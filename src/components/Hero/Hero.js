@@ -103,7 +103,7 @@ const Hero = () => {
 						<li className='hero__tech-stack-item'>
 							<img
 								src={sass}
-								title='Sass'
+								title='Sass/Scss'
 								alt='program_img'
 							/>
 						</li>

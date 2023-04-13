@@ -140,6 +140,7 @@
     &__tech-stack-images {
         @include reset-list;
         @include flex();
+		margin-bottom: 12rem;
         justify-content: center;
         flex-wrap: wrap;
         gap: 2rem;
