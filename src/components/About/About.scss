@@ -1,3 +1,58 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/typography' as *;
+
+.about {
+    @include layout-margin(2.4rem);
+    @include flex(column);
+    gap: 5rem;
+    align-items: center;
+    padding-top: 12rem;
+
+    @include tablet {
+        @include flex();
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    &__image-container {
+        @include flex();
+        justify-content: center;
+        border-radius: 1.7rem;
+        background-image: linear-gradient(
+			to bottom right,
+			#f8f8ff,
+			#f8d26b,
+			#966b28,
+			#7a5821
+		);
+        width: 90%;
+        height: auto;
+        padding: 0.4rem;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        border-radius: 1.7rem;
+    }
+
+    &__info-container {
+        @include flex(column);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $title-color;
+    }
+
+    &__subtitle {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+    }
+}

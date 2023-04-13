@@ -3,5 +3,6 @@
 @use './styles/partials/typography' as *;
 
 .App {
+    width: 100%;
     background-image: linear-gradient(to bottom right, #101010, #262626, #323232, #8e8e8e);
 }

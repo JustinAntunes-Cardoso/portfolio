@@ -10,6 +10,8 @@ import react from '../../assets/images/react.svg';
 import sass from '../../assets/images/sass.svg';
 import node from '../../assets/images/node.svg';
 import mysql from '../../assets/images/mysql.svg';
+import python from '../../assets/images/python.svg';
+import linux from '../../assets/images/linux.png';
 
 const linkedIn = 'https://www.linkedin.com/in/justin-antunes-cardoso/';
 const gitHub = 'https://github.com/JustinAntunes-Cardoso'
@@ -30,9 +32,9 @@ const Hero = () => {
 						<div className='hero__text-container'>
 							<h1 className='hero__title'>Full-Stack Developer</h1>
 							<p className='hero__text'>
-								Greetings and salutations! I'm Justin Antunes-Cardoso. A
+								Greetings & Salutations! I'm Justin Antunes-Cardoso. A
 								innovative Full-Stack Software Developer based in Mississauga,
-								ON, Canada. 📍
+								ON, Canada📍
 							</p>
 						</div>
 						<div className='hero__image-container'>
@@ -116,6 +118,20 @@ const Hero = () => {
 							<img
 								src={mysql}
 								title='MySQL'
+								alt='program_img'
+							/>
+						</li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={python}
+								title='Python'
+								alt='program_img'
+							/>
+						</li>
+						<li className='hero__tech-stack-item'>
+							<img
+								src={linux}
+								title='Linux'
 								alt='program_img'
 							/>
 						</li>
