@@ -3,6 +3,7 @@
 
 .hero {
     @include layout-margin(2.4rem);
+	margin-bottom: 12rem;
 
 	&__container {
 		@include flex(column);
@@ -140,7 +141,6 @@
     &__tech-stack-images {
         @include reset-list;
         @include flex();
-		margin-bottom: 12rem;
         justify-content: center;
         flex-wrap: wrap;
         gap: 2rem;
