@@ -7,10 +7,10 @@ function Contact() {
 			id='contact'
 			className='contact'>
 			<article className='contact__title-container'>
-				<h3 className='contact__title'>CONTACT</h3>
-				<p className='contact__text'>
-					feel free to contact me at my contact information below. 📞📱📧💬📫
-				</p>
+				<h3 className='contact__title'>Contact</h3>
+				<h2 className='contact__text'>
+					Feel Free to Contact Me at My Contact Information Below 📱
+				</h2>
 			</article>
 			<aside className='contact__icons-container'>
 				<div className='contact__info'>

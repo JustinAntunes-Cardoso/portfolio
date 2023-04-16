@@ -3,7 +3,6 @@
 
 .hero {
     @include layout-margin(2.4rem);
-	margin-bottom: 12rem;
 
 	&__container {
 		@include flex(column);
