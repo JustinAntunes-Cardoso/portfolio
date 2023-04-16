@@ -1,0 +1,8 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.project-list {
+    @include flex(column);
+    gap: 5rem;
+    text-align: center;
+}
