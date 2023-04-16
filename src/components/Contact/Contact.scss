@@ -5,7 +5,7 @@
 	@include layout-margin(2.4rem);
 	@include flex(column);
 	gap: 5rem;
-	margin-bottom: 8rem;
+	padding-top: 10rem;
 
 	&__title-container {
 		@include flex(column);
@@ -20,7 +20,6 @@
 
 	&__text {
 		text-align: center;
-		font-family: $font-title;
 		font-size: 2.4rem;
 	}
 
