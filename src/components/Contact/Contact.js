@@ -28,9 +28,11 @@ function Contact() {
 					</div>
 					<div className='contact__info-container'>
 						<h6 className='contact__info-title'>Mail</h6>
-						<p className='contact__info-text'>
-							justin.antunes-cardoso@hotmail.com
-						</p>
+						<a className='contact__link' href='mailto:justin.antunes-cardoso@hotmail.com'>
+							<p className='contact__info-text'>
+								justin.antunes-cardoso@hotmail.com
+							</p>
+						</a>
 					</div>
 				</div>
 			</aside>
