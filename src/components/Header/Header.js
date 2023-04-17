@@ -45,96 +45,98 @@ const Header = () => {
 
 	return (
 		<header className='header'>
-			<a
-				className='header__logo'
-				href='#home'>
-				<img
-					className='header__image'
-					src={image}
-					onMouseEnter={() => handleImage('hover')}
-					onMouseOut={() => handleImage()}
-					alt='Name logo'
-				/>
-			</a>
-			<i
-				className={classNameMenu}
-				onClick={handleOnClickMenu}
-				onMouseEnter={handleMouseEnter}
-				onMouseLeave={handleMouseDown}></i>
-			<nav className='header__nav'>
-				<ul className='header__list'>
-					<li className='header__list-item'>
-						<a
-							className='header__link'
-							href='#home'>
-							Home
-						</a>
-					</li>
-					<li className='header__list-item'>
-						<a
-							className='header__link'
-							href='#about'>
-							About
-						</a>
-					</li>
-					<li className='header__list-item'>
-						<a
-							className='header__link'
-							href='#projects'>
-							Projects
-						</a>
-					</li>
-					<li className='header__list-item'>
-						<a
-							className='header__link'
-							href='#contact'>
-							Contact
-						</a>
-					</li>
-				</ul>
-			</nav>
-			<div className={classNameClose}>
-				<span className='header__mobile-close'>
-					<i
-						className={classNameX}
-						onMouseEnter={handleMouseEnterX}
-						onMouseLeave={handleMouseDownX}
-						onClick={handleOnClickClose}></i>
-				</span>
-				<ul className='header__mobile-list'>
-					<li className='header__list-item'>
-						<a
-							className='header__link'
-							onClick={handleOnClickClose}
-							href='#home'>
-							Home
-						</a>
-					</li>
-					<li className='header__list-item'>
-						<a
-							className='header__link'
-							onClick={handleOnClickClose}
-							href='#about'>
-							About
-						</a>
-					</li>
-					<li className='header__list-item'>
-						<a
-							className='header__link'
-							onClick={handleOnClickClose}
-							href='#projects'>
-							Projects
-						</a>
-					</li>
-					<li className='header__list-item'>
-						<a
-							className='header__link'
-							onClick={handleOnClickClose}
-							href='#contact'>
-							Contact
-						</a>
-					</li>
-				</ul>
+			<div className='header__container'>
+				<a
+					className='header__logo'
+					href='#home'>
+					<img
+						className='header__image'
+						src={image}
+						onMouseEnter={() => handleImage('hover')}
+						onMouseOut={() => handleImage()}
+						alt='Name logo'
+					/>
+				</a>
+				<i
+					className={classNameMenu}
+					onClick={handleOnClickMenu}
+					onMouseEnter={handleMouseEnter}
+					onMouseLeave={handleMouseDown}></i>
+				<nav className='header__nav'>
+					<ul className='header__list'>
+						<li className='header__list-item'>
+							<a
+								className='header__link'
+								href='#home'>
+								Home
+							</a>
+						</li>
+						<li className='header__list-item'>
+							<a
+								className='header__link'
+								href='#about'>
+								About
+							</a>
+						</li>
+						<li className='header__list-item'>
+							<a
+								className='header__link'
+								href='#projects'>
+								Projects
+							</a>
+						</li>
+						<li className='header__list-item'>
+							<a
+								className='header__link'
+								href='#contact'>
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div className={classNameClose}>
+					<span className='header__mobile-close'>
+						<i
+							className={classNameX}
+							onMouseEnter={handleMouseEnterX}
+							onMouseLeave={handleMouseDownX}
+							onClick={handleOnClickClose}></i>
+					</span>
+					<ul className='header__mobile-list'>
+						<li className='header__list-item'>
+							<a
+								className='header__link'
+								onClick={handleOnClickClose}
+								href='#home'>
+								Home
+							</a>
+						</li>
+						<li className='header__list-item'>
+							<a
+								className='header__link'
+								onClick={handleOnClickClose}
+								href='#about'>
+								About
+							</a>
+						</li>
+						<li className='header__list-item'>
+							<a
+								className='header__link'
+								onClick={handleOnClickClose}
+								href='#projects'>
+								Projects
+							</a>
+						</li>
+						<li className='header__list-item'>
+							<a
+								className='header__link'
+								onClick={handleOnClickClose}
+								href='#contact'>
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 	);
