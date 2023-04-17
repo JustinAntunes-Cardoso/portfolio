@@ -12,13 +12,23 @@
 		@include layout-margin(9rem);
 	}
 
-    @include desktop {
-        @include flex();
+	@include desktop {
+		width: 110rem;
+		margin: 0 auto;
+		@include flex();
 		justify-content: center;
-		gap: 2rem;
-    }
+		gap: 10rem;
+		margin-bottom: 10rem;
+	}
 
 	&__image-container {
+		@include flex();
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	&__code-container {
 		@include flex();
 		justify-content: center;
 		border-radius: 1.7rem;
@@ -32,12 +42,76 @@
 		width: 90%;
 		height: auto;
 		padding: 0.4rem;
+
+		@include desktop {
+			height: 36rem;
+			width: 42rem;
+		}
 	}
 
-	&__image {
+	&__code {
 		width: 100%;
 		height: auto;
 		border-radius: 1.7rem;
+
+		@include desktop {
+			height: 35rem;
+			width: 41rem;
+		}
+	}
+
+	&__image-dev-container {
+		display: none;
+
+		@include tablet {
+			@include flex();
+			justify-self: center;
+			align-items: center;
+			position: absolute;
+			background-color: $stack-color;
+			padding: 1.1rem;
+			border-radius: 50%;
+			top: 24rem;
+			left: 39rem;
+		}
+
+		@include desktop {
+			top: 19rem;
+			left: 24rem;
+			
+		}
+	}
+
+	@keyframes rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	&__full-stack {
+		-webkit-animation: rotate 9s linear infinite;
+		animation: rotate 9s linear infinite;
+		width: 18rem;
+		
+		@include desktop {
+			width: 22rem;
+		}
+	}
+
+	&__dev {
+		padding-bottom: 1.5rem;
+		position: absolute;
+		left: 6.6rem;
+		width: 7rem;
+
+		@include desktop {
+			padding-bottom: 2rem;
+			left: 8rem;
+			width: 8rem;
+		}
 	}
 
 	&__info-container {
@@ -54,6 +128,10 @@
 	&__subtitle {
 		font-size: 2.4rem;
 		text-align: center;
+
+		@include desktop {
+			text-align: start;
+		}
 	}
 
 	&__text {

@@ -8,6 +8,10 @@
 		@include layout-margin(9rem);
 	}
 
+	@include desktop {
+		margin-bottom: 10rem;
+	}
+
 	&__container {
 		@include flex(column);
 		align-items: center;
@@ -15,8 +19,21 @@
         gap: 5rem;
 
 		@include desktop {
-			width: 115rem;
+			width: 110rem;
 			margin: 0 auto;
+			padding-top: 12rem;
+			gap: 10rem;
+		}
+	}
+
+	&__logo-text-image-container {
+		@include flex(column);
+		align-items: center;
+
+		@include desktop {
+			@include flex();
+			gap: 10rem;
+			align-items: flex-start;
 		}
 	}
 
@@ -25,6 +42,10 @@
         gap: 5rem;
         align-items: center;
 
+		@include desktop {
+			align-items: flex-start;
+			gap: 0rem;
+		}
 	}
 
 	&__logo {
@@ -35,6 +56,11 @@
 			width: 50vw;
 			height: 50vw;
 		}
+
+		@include desktop {
+			width: 45rem;
+			height: 45rem;
+		}
 	}
 
 	&__text-image-container {
@@ -42,10 +68,8 @@
 		align-items: center;
 		gap: 5rem;
 
-		@include tablet {
-			
-			
-			
+		@include desktop {
+			gap: 0rem;
 		}
 	}
 
@@ -63,6 +87,12 @@
 		@include tablet {
 			font-size: 4.8rem;
 		}
+
+		@include desktop {
+			@include headlines-margin(1rem,0);
+			text-align: start;
+			font-size: 4.2rem;
+		}
 	}
 
 	&__text {
@@ -71,6 +101,12 @@
 
 		@include tablet {
 			font-size: 2.4rem;
+		}
+
+		@include desktop {
+			@include components-margin(1.6rem, 2.4rem);
+			text-align: start;
+			font-size: 2rem;
 		}
 	}
 
@@ -93,6 +129,11 @@
 			width: 41rem;
 			height: 41rem;
 		}
+
+		@include desktop {
+			width: 36rem;
+			height: 36rem;;
+		}
 	}
 
 	&__image {
@@ -109,6 +150,11 @@
 		@include tablet {
 			width: 40rem;
 			height: 40rem;
+		}
+
+		@include desktop {
+			width: 35rem;
+			height: 35rem;;
 		}
 	}
 
@@ -145,6 +191,12 @@
 		align-items: center;
 		justify-content: center;
 		gap: 3rem;
+
+		@include desktop {
+			margin-top: -4rem;
+			margin-left: 17.5rem;
+			gap: 2rem;
+		}
 	}
 
 	&__link {
@@ -153,6 +205,11 @@
 
 		@include tablet {
 			font-size: 7rem;
+		}
+
+		@include desktop {
+			font-size: 5rem;
+			text-align: center;
 		}
 
 		&:hover {
@@ -165,6 +222,11 @@
 			@include tablet {
 				font-size: 6rem;
 			}
+
+			@include desktop {
+				font-size: 4rem;
+			}
+	
 		}
 		
 	}
@@ -173,6 +235,12 @@
         @include flex(column);
         align-items: center;
         gap: 2rem;
+
+		@include desktop {
+			@include flex();
+			gap: 4rem;
+			align-items: center;
+		}
 	}
 
 	&__tech-stack {
@@ -181,6 +249,14 @@
         padding-bottom: 1rem;
         margin-bottom: 3rem;
 
+		@include desktop {
+			border-right: 2px solid $primary-text-color;
+			border-bottom: 0;
+			padding-bottom: 0;
+			padding-right: 1rem;
+			width: 24rem;
+			margin-top: 3.5rem;
+		}
 	}
 
     &__tech-stack-images {

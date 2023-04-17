@@ -3,7 +3,7 @@ import './ProjectCard.scss';
 
 const ProjectCard = ({ project, isReverse }) => {
 	return (
-		<div className='project-card'>
+		<div className={isReverse ? 'project-card reverse' : 'project-card'}>
 			<div className='project-card__image-container'>
 				<a
 					target='_blank'
@@ -20,8 +20,8 @@ const ProjectCard = ({ project, isReverse }) => {
 				<h3 className='project-card__title'>{project.title}</h3>
 				<p className='project-card__text'>{project.text}</p>
 				<div className='project-card__stack-container'>
-					{project.stack.map((tech) => {
-						return <h4 className='project-card__stack'>{tech}</h4>;
+					{project.stack.map((tech, index) => {
+						return <h4 key={index} className='project-card__stack'>{tech}</h4>;
 					})}
 				</div>
 				<div className='project-card__link-container'>
