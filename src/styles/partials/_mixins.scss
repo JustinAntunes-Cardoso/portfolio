@@ -37,14 +37,14 @@
     font-weight: $weight;
 }
 
-@mixin mobileL {
-    @media screen and (min-width: $mobileL-breakpoint) {
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
         @content;
     }    
 }
 
-@mixin tablet {
-    @media screen and (min-width: $tablet-breakpoint) {
+@mixin laptop {
+    @media screen and (min-width: $laptop-breakpoint) {
         @content;
     }    
 }

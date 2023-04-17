@@ -7,10 +7,17 @@
 	gap: 5rem;
 	padding-top: 10rem;
 
+	@include tablet {
+		@include layout-margin(9rem);
+	}
+
     &__title-container {
         @include flex(column);
         align-items: center;
         gap: 2rem;
+		@include tablet {
+			align-items: flex-start;
+		}
     }
 
     &__title {
@@ -19,7 +26,6 @@
 	}
 
 	&__text {
-		text-align: center;
 		font-size: 2.4rem;
 	}
 }

@@ -7,10 +7,18 @@
 	gap: 5rem;
 	padding-top: 10rem;
 
+	@include tablet {
+		@include layout-margin(9rem);
+	}
+
 	&__title-container {
 		@include flex(column);
 		align-items: center;
 		gap: 2rem;
+
+		@include tablet {
+			align-items: flex-start;
+		}
 	}
 
 	&__title {
@@ -21,6 +29,29 @@
 	&__text {
 		text-align: center;
 		font-size: 2.4rem;
+
+		@include tablet {
+			text-align: start;
+		}
+	}
+
+	&__icons-container {
+		@include flex(column);
+		gap: 5rem;
+
+		@include tablet {
+			@include flex();
+		}
+	}
+
+	&__info {
+		@include flex(column);
+		align-items: center;
+		gap: 1.8rem;
+
+		@include tablet {
+			@include flex();
+		}
 	}
 
 	&__image-container {
@@ -38,16 +69,14 @@
 		font-size: 4rem;
 	}
 
-	&__icons-container {
-		@include flex(column);
-		gap: 5rem;
+	&__info-container {
+		@include tablet {
+			@include flex(column);
+			align-items: flex-start;
+			width: 15rem;
+		}
 	}
-
-	&__info {
-		@include flex(column);
-		align-items: center;
-		gap: 1.8rem;
-	}
+	
 
 	&__info-title {
         color: $title-color;

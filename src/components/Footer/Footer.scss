@@ -2,38 +2,61 @@
 @use '../../styles/partials/mixins' as *;
 
 .footer {
-    @include flex(column);
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    background-color: $primary-background-color;
-    height: 20vh;
-    padding: 0 2.4rem;
-    margin-top: 10rem;
+	
+	background-color: $primary-background-color;
+	padding: 0 2.4rem;
+	margin-top: 10rem;
 
-    &__info-container {
-        
-    }
-
-    &__info {
-        font-size: 1.6rem;
-    }
-
-    &__link-container {
-        @include flex();
+	&__container {
+        @include flex(column);
+        align-items: center;
+        justify-content: center;
         gap: 2rem;
-    }
+        height: 20vh;
 
-    &__link {
-        transition: all 0.5s;
-        font-size: 2.4rem;
+        @include tablet {
+            @include flex();
+            justify-content: space-between;
+            padding: 0 3.2rem;
+        }
 
-        &:hover {
+        @include desktop {
+            width: 115rem;
+            margin: 0 auto;
+        }
+	}
+
+	&__info {
+		font-size: 1.6rem;
+
+		@include tablet {
+			font-size: 1.8rem;
+		}
+	}
+
+	&__link-container {
+		@include flex();
+		gap: 2rem;
+	}
+
+	&__link {
+		transition: all 0.5s;
+		font-size: 2.4rem;
+
+		@include tablet {
+			font-size: 2.8rem;
+		}
+
+		&:hover {
 			color: $secondary-text-color;
 		}
 
 		&:active {
 			font-size: 2rem;
-		} 
-    }    
+
+			@include tablet {
+				font-size: 2.8rem;
+			}
+		}
+	}
 }
