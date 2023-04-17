@@ -5,4 +5,8 @@
     @include flex(column);
     gap: 5rem;
     text-align: center;
+
+    @include desktop {
+        gap: 8rem;
+    }
 }

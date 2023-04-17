@@ -17,6 +17,12 @@
 		gap: 2rem;
 	}
 
+	@include desktop {
+		@include flex();
+		height: 40rem;
+		gap: 8rem;
+	}
+
     &__image-container {
         width: 100%;
         height: auto;
@@ -24,7 +30,6 @@
         border-radius: 1.7rem;
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
         overflow: hidden;
-        
     }
 
 	&__image {
@@ -34,6 +39,10 @@
 
         &:hover {
             transform: translateY(-74%);
+
+			@include desktop {
+				transform: translateY(-60%);
+			}
         }
 	}
 
@@ -51,6 +60,9 @@
 	}
 
 	&__title {
+		@include desktop {
+			margin-bottom: 1rem;
+		}
 	}
 
 	&__text {
@@ -64,6 +76,11 @@
 
 		@include tablet {
 			margin-top: 2rem;
+		}
+
+		@include desktop {
+			margin-top: 3rem;
+			gap: 1.6rem;
 		}
 	}
 
@@ -83,6 +100,11 @@
 			margin-top: 2rem;
 		}
 
+		@include desktop {
+			margin-top: 4rem;
+			gap: 2.5rem;
+		}
+
         & a {
             @include flex();
             gap: 0.5rem;
@@ -97,5 +119,11 @@
 	}
 
 	&__link {
+	}
+}
+
+.reverse {
+	@include desktop {
+		flex-direction: row-reverse;
 	}
 }
