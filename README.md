@@ -46,20 +46,13 @@ The site was built using WordPress, with a custom theme designed to match the co
 
 As a full-stack developer, I bring a range of technical and non-technical skills to the table, including:
 
-- # Programming Languages: 
-Proficient in JavaScript, HTML, CSS, Python, and Java.
-- # Web Development: 
-Experience building responsive, user-friendly web applications using frameworks such as React.
-- # Database Design and Management: 
-Familiarity with SQL databases, including MySQL.
-- # API Development: 
-Experience with Firebase APIs and creating RESTful APIs using Node.js. Experience using authentication protocols such as OAuth and JWT.
-- # Server Administration: 
-Familiarity with AWS, as well as experience setting up and maintaining Linux servers. Using DevOps tools such as Git.
-- # Project Management: 
-Experience leading development teams, coordinating project schedules, and managing budgets and resources.
-- # Communication and Collaboration: 
-Strong interpersonal skills and the ability to work effectively in a team environment, as well as experience working directly with clients to understand their needs and goals.
+- **Programming Languages:** Proficient in JavaScript, HTML, CSS, Python, and Java.
+- **Web Development:** Experience building responsive, user-friendly web applications using frameworks such as React.
+- **Database Design and Management:** Familiarity with SQL databases, including MySQL.
+- **API Development:** Experience with Firebase APIs and creating RESTful APIs using Node.js. Experience using authentication protocols such as OAuth and JWT.
+- **Server Administration:** Familiarity with AWS, as well as experience setting up and maintaining Linux servers. Using DevOps tools such as Git.
+- **Project Management:** Experience leading development teams, coordinating project schedules, and managing budgets and resources.
+- **Communication and Collaboration:** Strong interpersonal skills and the ability to work effectively in a team environment, as well as experience working directly with clients to understand their needs and goals.
 
 In addition to these technical and non-technical skills, I am always seeking to learn and grow as a developer, and I am committed to staying up-to-date with the latest technologies and best practices in the field.
 
@@ -67,8 +60,8 @@ In addition to these technical and non-technical skills, I am always seeking to 
 
 Thank you for taking the time to visit my portfolio. If you'd like to get in touch, you can reach me through any of the following channels:
 
-- # Email: [justin.antunes-cardoso@hotmail.com](justin.antunes-cardoso@hotmail.com)
-- # LinkedIn: [linkedin.com/in/justin-antunes-cardoso](https://www.linkedin.com/in/justin-antunes-cardoso)
-- # GitHub: [github.com/JustinAntunes-Cardoso](https://github.com/JustinAntunes-Cardoso)
+- **Email: [justin.antunes-cardoso@hotmail.com](mailto:justin.antunes-cardoso@hotmail.com)**
+- **LinkedIn: [linkedin.com/in/justin-antunes-cardoso](https://www.linkedin.com/in/justin-antunes-cardoso)**
+- **GitHub: [github.com/JustinAntunes-Cardoso](https://github.com/JustinAntunes-Cardoso)**
 
 I'm always interested in hearing about new opportunities or connecting with other developers and tech professionals. Please feel free to reach out, and I'll get back to you as soon as possible. Thank you again for your interest!
