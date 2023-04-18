@@ -37,7 +37,7 @@ const Hero = () => {
 							<div className='hero__text-container'>
 								<h1 className='hero__title'>Full-Stack Developer</h1>
 								<p className='hero__text'>
-									Greetings & Salutations! I'm Justin Antunes-Cardoso. A
+									Greetings & Salutations! I'm Justin Antunes-Cardoso. An
 									innovative Full-Stack Software Developer based in Mississauga,
 									ON, Canada📍
 								</p>
