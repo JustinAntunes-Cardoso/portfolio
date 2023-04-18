@@ -1,3 +1,120 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/typography' as *;
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+.header {
+	background-color: $primary-background-color;
+	box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+	font-size: 3.2rem;
+	padding: 0 3.2rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 8.6rem;
+	z-index: 1;
+
+	&__container {
+		@include flex();
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		@include desktop {
+			width: 115rem;
+			margin: 0 auto;
+		}
+	}
+
+	&__logo {
+		@include reset-anchor;
+	}
+
+	&__image {
+		height: 7rem;
+		width: 10rem;
+		position: relative;
+		top: 0.5rem;
+	}
+
+	&__nav {
+		display: none;
+
+		@include laptop {
+			display: block;
+		}
+	}
+
+	&__mobile {
+		font-size: 4rem;
+		cursor: pointer;
+
+		@include laptop {
+			display: none;
+		}
+	}
+
+	&__list {
+		@include reset-list;
+		@include flex();
+		gap: 2rem;
+
+		@include laptop {
+			font-size: 2.8rem;
+		}
+	}
+
+	&__list-item {
+	}
+
+	&__link {
+		@include reset-anchor;
+		font-weight: 600;
+		transition: all 0.5s;
+
+		&:hover {
+			color: $primary-hover-color;
+		}
+
+		&:active {
+			font-size: 2.4rem;
+			margin: 0 0.6rem;
+			color: $secondary-hover-color;
+		}
+	}
+
+	&__mobile-nav {
+		@include flex();
+		top: 0;
+		align-items: center;
+		background-color: $primary-background-color;
+		height: 100vh;
+		width: 100%;
+		justify-content: center;
+		position: fixed;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+		z-index: 2;
+	}
+
+	&__mobile-close {
+		position: absolute;
+		right: 5rem;
+		top: 6rem;
+	}
+
+	&__mobile-list {
+		display: flex;
+		flex-direction: column;
+		font-size: 3.2rem;
+		gap: 5rem;
+		list-style: none;
+	}
+}
+
+.closed-menu {
+	left: -100% !important;
+}
+
+.open-menu {
+	left: 0% !important;
+}

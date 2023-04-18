@@ -1,0 +1,111 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.contact {
+	@include layout-margin(2.4rem);
+	@include flex(column);
+	gap: 5rem;
+	padding-top: 10rem;
+
+	@include tablet {
+		@include layout-margin(9rem);
+	}
+
+	@include desktop {
+		width: 110rem;
+		margin: 0 auto;
+		margin-bottom: 10rem;
+	}
+
+	&__title-container {
+		@include flex(column);
+		align-items: center;
+		gap: 2rem;
+
+		@include tablet {
+			align-items: flex-start;
+		}
+	}
+
+	&__title {
+		color: $title-color;
+		font-size: 2rem;
+	}
+
+	&__text {
+		text-align: center;
+		font-size: 2.4rem;
+
+		@include tablet {
+			text-align: start;
+		}
+	}
+
+	&__icons-container {
+		@include flex(column);
+		gap: 5rem;
+
+		@include tablet {
+			@include flex();
+		}
+
+		@include laptop {
+			margin-left: 2rem;
+			gap: 8rem;
+		}
+	}
+
+	&__info {
+		@include flex(column);
+		align-items: center;
+		gap: 1.8rem;
+
+		@include tablet {
+			@include flex();
+		}
+	}
+
+	&__image-container {
+		@include flex();
+		justify-content: center;
+		align-items: center;
+		width: 8.5rem;
+		height: 8.5rem;
+		background-color: $primary-background-color;
+		border-radius: 50%;
+		box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+	}
+
+	&__image {
+		font-size: 4rem;
+	}
+
+	&__info-container {
+		@include tablet {
+			@include flex(column);
+			align-items: flex-start;
+			width: 15rem;
+		}
+
+		@include laptop {
+			width: fit-content;
+		}
+	}
+	
+
+	&__info-title {
+        color: $title-color;
+		text-align: center;
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+	}
+
+	&__info-text {
+		font-size: 1.8rem;
+
+        &:hover {
+			color: $primary-text-color;
+			transition: all 0.3s;
+		}
+	}
+}

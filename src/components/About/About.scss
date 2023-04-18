@@ -1,3 +1,149 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/typography' as *;
+
+.about {
+	@include layout-margin(2.4rem);
+	@include flex(column);
+	gap: 5rem;
+	align-items: center;
+	padding-top: 10rem;
+
+	@include tablet {
+		@include layout-margin(9rem);
+	}
+
+	@include desktop {
+		width: 110rem;
+		margin: 0 auto;
+		@include flex();
+		justify-content: center;
+		gap: 10rem;
+		margin-bottom: 10rem;
+	}
+
+	&__image-container {
+		@include flex();
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		@include tablet {
+			align-items: flex-end;
+		}
+	}
+
+	&__code-container {
+		@include flex();
+		justify-content: center;
+		border-radius: 1.7rem;
+		background-image: linear-gradient(
+			to bottom right,
+			#f8f8ff,
+			#f8d26b,
+			#966b28,
+			#7a5821
+		);
+		width: 90%;
+		height: auto;
+		padding: 0.4rem;
+
+		@include desktop {
+			height: 36rem;
+			width: 42rem;
+		}
+	}
+
+	&__code {
+		width: 100%;
+		height: auto;
+		border-radius: 1.7rem;
+
+		@include desktop {
+			height: 35rem;
+			width: 41rem;
+		}
+	}
+
+	&__image-dev-container {
+		display: none;
+
+		@include tablet {
+			@include flex();
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			background-color: $stack-color;
+			padding: 1.1rem;
+			border-radius: 50%;
+			left: 75%;
+			bottom: -10%;
+		}
+
+		@include laptop {
+			left: 80%;
+		}
+
+		@include desktop {
+			top: 20rem;
+			left: 28rem;
+			width: 20rem;
+			padding: 0;		
+		}
+	}
+
+	@keyframes rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	&__full-stack {
+		-webkit-animation: rotate 9s linear infinite;
+		animation: rotate 9s linear infinite;
+		width: 18rem;
+		
+		@include desktop {
+			width: 90%;
+		}
+	}
+
+	&__dev {
+		padding-bottom: 1.5rem;
+		position: absolute;
+		left: 6.6rem;
+		width: 7rem;
+
+		@include desktop {
+			padding-bottom: 2rem;
+			left: 6rem;
+			width: 8rem;
+		}
+	}
+
+	&__info-container {
+		@include flex(column);
+		align-items: center;
+		gap: 2rem;
+	}
+
+	&__title {
+		font-size: 2rem;
+		color: $title-color;
+	}
+
+	&__subtitle {
+		font-size: 2.4rem;
+		text-align: center;
+
+		@include desktop {
+			text-align: start;
+		}
+	}
+
+	&__text {
+		font-size: 1.8rem;
+	}
+}

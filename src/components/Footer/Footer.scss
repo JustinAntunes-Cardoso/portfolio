@@ -1,3 +1,62 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/typography' as *;
+
+.footer {
+	
+	background-color: $primary-background-color;
+	padding: 0 2.4rem;
+	margin-top: 10rem;
+
+	&__container {
+        @include flex(column);
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        height: 20vh;
+
+        @include tablet {
+            @include flex();
+            justify-content: space-between;
+            padding: 0 3.2rem;
+        }
+
+        @include desktop {
+            width: 115rem;
+            margin: 0 auto;
+        }
+	}
+
+	&__info {
+		font-size: 1.6rem;
+
+		@include tablet {
+			font-size: 1.8rem;
+		}
+	}
+
+	&__link-container {
+		@include flex();
+		gap: 2rem;
+	}
+
+	&__link {
+		transition: all 0.5s;
+		font-size: 2.4rem;
+
+		@include tablet {
+			font-size: 2.8rem;
+		}
+
+		&:hover {
+			color: $secondary-text-color;
+		}
+
+		&:active {
+			font-size: 2rem;
+
+			@include tablet {
+				font-size: 2.8rem;
+			}
+		}
+	}
+}

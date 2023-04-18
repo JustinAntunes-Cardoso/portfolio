@@ -1,3 +1,37 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/typography' as *;
+
+.projects {
+    @include layout-margin(2.4rem);
+	@include flex(column);
+	gap: 5rem;
+	padding-top: 10rem;
+
+	@include tablet {
+		@include layout-margin(9rem);
+	}
+
+	@include desktop {
+		width: 110rem;
+		margin: 0 auto;
+		margin-bottom: 10rem;
+	}
+
+    &__title-container {
+        @include flex(column);
+        align-items: center;
+        gap: 2rem;
+		@include tablet {
+			align-items: flex-start;
+		}
+    }
+
+    &__title {
+		color: $title-color;
+		font-size: 2rem;
+	}
+
+	&__text {
+		font-size: 2.4rem;
+	}
+}
