@@ -26,6 +26,10 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
+
+		@include tablet {
+			align-items: flex-end;
+		}
 	}
 
 	&__code-container {
@@ -65,20 +69,25 @@
 
 		@include tablet {
 			@include flex();
-			justify-self: center;
 			align-items: center;
+			justify-content: center;
 			position: absolute;
 			background-color: $stack-color;
 			padding: 1.1rem;
 			border-radius: 50%;
-			top: 24rem;
-			left: 39rem;
+			left: 75%;
+			bottom: -10%;
+		}
+
+		@include laptop {
+			left: 80%;
 		}
 
 		@include desktop {
-			top: 19rem;
-			left: 24rem;
-			
+			top: 20rem;
+			left: 28rem;
+			width: 20rem;
+			padding: 0;		
 		}
 	}
 
@@ -97,7 +106,7 @@
 		width: 18rem;
 		
 		@include desktop {
-			width: 22rem;
+			width: 90%;
 		}
 	}
 
@@ -109,7 +118,7 @@
 
 		@include desktop {
 			padding-bottom: 2rem;
-			left: 8rem;
+			left: 6rem;
 			width: 8rem;
 		}
 	}
