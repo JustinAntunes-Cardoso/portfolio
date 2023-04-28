@@ -1,17 +1,17 @@
-import React from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './ProjectList.scss';
 import brainhive from '../../assets/images/brainhive-home.png';
 import seba from '../../assets/images/seba-home.png';
 import ktc from '../../assets/images/ktc-home.png';
+import { Project } from '../../types';
 
 //{image: '', title: '', text: '', stack: ['', ''], github: '', site: ''}
-const projects = [
+const projects: Project[] = [
 	{
 		image: brainhive,
 		title: 'BrainHive 🧠🐝',
 		text: "A spelling bee application which is the perfect tool for students & language enthusiasts to improve their spelling skills. With a fun, interactive interface and thousands of words users can practice from, this application is designed to make spelling fun & easy.",
-		stack: ['React', 'SCSS', 'JavaScript', 'Node.js', 'Express.js', 'MySQL'],
+		stack: ['TypeScript', 'React', 'SCSS', 'Node.js', 'Express.js', 'MySQL'],
 		github: 'https://github.com/JustinAntunes-Cardoso/brainhive',
 		site: 'https://thebrainhive.com/',
 	},
