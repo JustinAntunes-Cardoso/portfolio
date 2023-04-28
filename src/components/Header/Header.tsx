@@ -16,7 +16,7 @@ const Header = () => {
 
 	const [image, setImage] = useState(logo);
 
-	const handleImage = (action) =>
+	const handleImage = (action: string) =>
 		action === 'hover' ? setImage(logoHover) : setImage(logo);
 
 	const handleMouseEnter = () => {
@@ -53,7 +53,7 @@ const Header = () => {
 						className='header__image'
 						src={image}
 						onMouseEnter={() => handleImage('hover')}
-						onMouseOut={() => handleImage()}
+						onMouseOut={() => handleImage('nohover')}
 						alt='Name logo'
 					/>
 				</a>
