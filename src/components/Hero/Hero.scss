@@ -2,7 +2,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .hero {
-    @include layout-margin(2.4rem);
+	@include layout-margin(2.4rem);
 
 	@include tablet {
 		@include layout-margin(9rem);
@@ -16,7 +16,7 @@
 		@include flex(column);
 		align-items: center;
 		padding-top: 15rem;
-        gap: 5rem;
+		gap: 5rem;
 
 		@include desktop {
 			width: 110rem;
@@ -38,9 +38,9 @@
 	}
 
 	&__info-container {
-        @include flex(column);
-        gap: 5rem;
-        align-items: center;
+		@include flex(column);
+		gap: 5rem;
+		align-items: center;
 
 		@include desktop {
 			align-items: flex-start;
@@ -51,7 +51,7 @@
 	&__logo {
 		width: 90vw;
 		height: 90vw;
-		
+
 		@include tablet {
 			width: 50vw;
 			height: 50vw;
@@ -64,7 +64,7 @@
 	}
 
 	&__text-image-container {
-        @include flex(column);
+		@include flex(column);
 		align-items: center;
 		gap: 5rem;
 
@@ -74,22 +74,22 @@
 	}
 
 	&__text-container {
-        text-align: center;
+		text-align: center;
 		@include tablet {
 			@include flex(column);
 		}
 	}
 
 	&__title {
-        font-size: 3.6rem;
-        @include headlines-margin();
+		font-size: 3.6rem;
+		@include headlines-margin();
 
 		@include tablet {
 			font-size: 4.8rem;
 		}
 
 		@include desktop {
-			@include headlines-margin(1rem,0);
+			@include headlines-margin(1rem, 0);
 			text-align: start;
 			font-size: 4.2rem;
 		}
@@ -97,7 +97,7 @@
 
 	&__text {
 		@include components-margin();
-        font-size: 2rem;
+		font-size: 2rem;
 
 		@include tablet {
 			font-size: 2.4rem;
@@ -132,7 +132,7 @@
 
 		@include desktop {
 			width: 36rem;
-			height: 36rem;;
+			height: 36rem;
 		}
 	}
 
@@ -154,7 +154,7 @@
 
 		@include desktop {
 			width: 35rem;
-			height: 35rem;;
+			height: 35rem;
 		}
 	}
 
@@ -226,72 +226,69 @@
 			@include desktop {
 				font-size: 4rem;
 			}
-	
 		}
-		
 	}
 
 	&__tech-stack-container {
-        @include flex(column);
-        align-items: center;
-        gap: 2rem;
+		@include flex(column);
+		align-items: center;
+		gap: 2rem;
 
 		@include desktop {
 			@include flex();
-			gap: 4rem;
+			gap: 2rem;
 			align-items: center;
 		}
 	}
 
 	&__tech-stack {
-        font-size: 2.4rem;
-        border-bottom: 2px solid $primary-text-color;
-        padding-bottom: 1rem;
-        margin-bottom: 3rem;
+		font-size: 2.4rem;
+		border-bottom: 2px solid $primary-text-color;
+		padding-bottom: 1rem;
+		margin-bottom: 3rem;
 
 		@include desktop {
+			align-self: flex-start;
 			border-right: 2px solid $primary-text-color;
 			border-bottom: 0;
 			padding-bottom: 0;
-			padding-right: 1rem;
-			width: 24rem;
-			margin-top: 3.5rem;
+			padding-right: 2rem;
+			width: 32rem;
+			margin-top: 10rem;
 		}
 	}
 
-    &__tech-stack-images {
-        @include reset-list;
-        @include flex();
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
+	&__tech-stack-images {
+		@include reset-list;
+		@include flex();
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
 
 		@include tablet {
 			gap: 2.5rem;
 		}
-    }
+	}
 
-    &__tech-stack-item {
-        @include flex();
-        justify-content: center;
-        align-items: center;
-        width: 10rem;
-        height: 10rem;
-        background-color: $primary-background-color;
-        border-radius: 50%;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+	&__tech-stack-item {
+		@include flex();
+		justify-content: center;
+		align-items: center;
+		width: 10rem;
+		height: 10rem;
+		background-color: $primary-background-color;
+		border-radius: 50%;
+		box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 
 		@include tablet {
-
 		}
 
-        & img {
-            height: auto;
-            width: 4.6rem;
+		& img {
+			height: auto;
+			width: 4.6rem;
 
 			@include tablet {
-
 			}
-        }
-    }
+		}
+	}
 }

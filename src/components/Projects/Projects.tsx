@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectList from '../ProjectList';
 import './Projects.scss';
 

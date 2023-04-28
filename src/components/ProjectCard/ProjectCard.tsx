@@ -1,7 +1,12 @@
-import React from 'react';
 import './ProjectCard.scss';
+import { Project } from '../../types';
 
-const ProjectCard = ({ project, isReverse }) => {
+type ProjectCardProps = {
+	project: Project;
+	isReverse: boolean;
+}
+
+const ProjectCard = ({ project, isReverse }: ProjectCardProps) => {
 	return (
 		<div className={isReverse ? 'project-card reverse' : 'project-card'}>
 			<div className='project-card__image-container'>
