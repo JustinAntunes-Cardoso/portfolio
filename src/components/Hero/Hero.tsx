@@ -8,6 +8,7 @@ import ts from '../../assets/images/typescript.svg';
 import react from '../../assets/images/react.svg';
 import redux from '../../assets/images/redux.svg';
 import jest from '../../assets/images/jest.png';
+import test from '../../assets/images/react-testing-library.png';
 import sass from '../../assets/images/sass.svg';
 import node from '../../assets/images/node.svg';
 import express from '../../assets/images/express.svg';
@@ -15,13 +16,14 @@ import mysql from '../../assets/images/mysql.svg';
 import python from '../../assets/images/python.svg';
 import django from '../../assets/images/django.svg';
 import java from '../../assets/images/java.svg';
+import sharp from '../../assets/images/c_sharp.svg';
 import c from '../../assets/images/c.svg';
 import aws from '../../assets/images/aws.svg';
 import firebase from '../../assets/images/firebase.svg';
 import linux from '../../assets/images/linux.png';
 import { TechStack } from '../../types';
 
-const linkedIn = 'https://www.linkedin.com/in/justin-antunes-cardoso/';
+const linkedIn = 'https://www.linkedin.com/in/justinantunescardoso/';
 const gitHub = 'https://github.com/JustinAntunes-Cardoso';
 
 const techStack: TechStack[] = [
@@ -32,6 +34,7 @@ const techStack: TechStack[] = [
 	{ src: react, title: 'React' },
 	{ src: redux, title: 'Redux' },
 	{ src: jest, title: 'Jest' },
+	{ src: test, title: 'React Testing Library' },
 	{ src: sass, title: 'Sass/Scss' },
 	{ src: node, title: 'Node.js' },
 	{ src: express, title: 'Express.js' },
@@ -39,6 +42,7 @@ const techStack: TechStack[] = [
 	{ src: python, title: 'Python' },
 	{ src: django, title: 'Django' },
 	{ src: java, title: 'Java' },
+	{ src: sharp, title: 'C#' },
 	{ src: c, title: 'C' },
 	{ src: aws, title: 'AWS' },
 	{ src: firebase, title: 'Firebase' },
