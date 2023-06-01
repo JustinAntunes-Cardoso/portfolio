@@ -8,7 +8,6 @@ import ts from '../../assets/images/typescript.svg';
 import react from '../../assets/images/react.svg';
 import redux from '../../assets/images/redux.svg';
 import jest from '../../assets/images/jest.png';
-import test from '../../assets/images/react-testing-library.png';
 import sass from '../../assets/images/sass.svg';
 import node from '../../assets/images/node.svg';
 import express from '../../assets/images/express.svg';
@@ -34,7 +33,6 @@ const techStack: TechStack[] = [
 	{ src: react, title: 'React' },
 	{ src: redux, title: 'Redux' },
 	{ src: jest, title: 'Jest' },
-	{ src: test, title: 'React Testing Library' },
 	{ src: sass, title: 'Sass/Scss' },
 	{ src: node, title: 'Node.js' },
 	{ src: express, title: 'Express.js' },
