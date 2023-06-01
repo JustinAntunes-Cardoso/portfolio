@@ -14,7 +14,7 @@ const Footer = () => {
 						aria-label='linkedin'
 						target='_blank'
 						rel='noreferrer'
-						href='https://www.linkedin.com/in/justin-antunes-cardoso/   '>
+						href='https://www.linkedin.com/in/justinantunescardoso/   '>
 						<i className='footer__link fa-brands fa-linkedin'></i>
 					</a>
 					<a
