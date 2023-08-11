@@ -12,6 +12,8 @@ import sass from '../../assets/images/sass.svg';
 import node from '../../assets/images/node.svg';
 import express from '../../assets/images/express.svg';
 import mysql from '../../assets/images/mysql.svg';
+import mongodb from '../../assets/images/MongoDB.svg'
+import postgresql from '../../assets/images/PostgreSQL.svg'
 import python from '../../assets/images/python.svg';
 import django from '../../assets/images/django.svg';
 import java from '../../assets/images/java.svg';
@@ -37,6 +39,8 @@ const techStack: TechStack[] = [
 	{ src: node, title: 'Node.js' },
 	{ src: express, title: 'Express.js' },
 	{ src: mysql, title: 'MySQL' },
+	{ src: mongodb, title: 'MongoDB' },
+	{ src: postgresql, title: 'PostgreSQL' },
 	{ src: python, title: 'Python' },
 	{ src: django, title: 'Django' },
 	{ src: java, title: 'Java' },
