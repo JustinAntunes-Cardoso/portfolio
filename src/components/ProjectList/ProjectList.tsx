@@ -1,5 +1,6 @@
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './ProjectList.scss';
+import sudokool from '../../assets/images/sudokool-home.png';
 import brainhive from '../../assets/images/brainhive-home.png';
 import seba from '../../assets/images/seba-home.png';
 import ktc from '../../assets/images/ktc-home.png';
@@ -7,6 +8,14 @@ import { Project } from '../../types';
 
 //{image: '', title: '', text: '', stack: ['', ''], github: '', site: ''}
 const projects: Project[] = [
+	{
+		image: sudokool,
+		title: 'Sudokool 🧩✏️',
+		text: "Discover the Sudokool app - your go-to destination for endless Sudoku fun.Enjoy endless puzzles, and a friendly interface for an addictive solving experience.",
+		stack: ['TypeScript', 'React', 'SCSS', 'Jest', 'Python', 'Django', 'AWS', 'Linux'],
+		github: 'https://github.com/JustinAntunes-Cardoso/sudokool',
+		site: 'https://sudokool.vercel.app/',
+	},
 	{
 		image: brainhive,
 		title: 'BrainHive 🧠🐝',
