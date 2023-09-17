@@ -38,7 +38,7 @@ const About = () => {
 				<p className='about__text'>
 					As a Full-Stack Software Developer, I possess a diverse arsenal of
 					skills in HTML, CSS, JavaScript, TypeScript, React, Redux, Jest, SCSS,
-					Node.js, Express.js, MySQL, Python, Django, Java, C#, C, AWS, Firebase & Linux.
+					Node.js, Express.js, MySQL, MonogoDB, PostgreSQL, Python, Django, Java, C#, C, AWS, Firebase & Linux.
 					I'm equipped with a unique combination of technical knowledge and problem-solving
 					skills, enabling me to develop efficient and effective software
 					solutions. My ability to communicate complex technical concepts in a clear
