@@ -5,7 +5,6 @@
 .header {
 	background-color: $primary-background-color;
 	box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
-	font-size: 3.2rem;
 	padding: 0 3.2rem;
 	position: fixed;
 	top: 0;
@@ -59,11 +58,8 @@
 		gap: 2rem;
 
 		@include laptop {
-			font-size: 2.8rem;
+			font-size: 2.4rem;
 		}
-	}
-
-	&__list-item {
 	}
 
 	&__link {
@@ -76,8 +72,8 @@
 		}
 
 		&:active {
-			font-size: 2.4rem;
-			margin: 0 0.6rem;
+			font-size: 2.2rem;
+			margin: 0 0.5rem;
 			color: $secondary-hover-color;
 		}
 	}
