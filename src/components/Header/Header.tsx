@@ -81,6 +81,13 @@ const Header = () => {
 						<li className='header__list-item'>
 							<a
 								className='header__link'
+								href='#certifications'>
+								Certifications
+							</a>
+						</li>
+						<li className='header__list-item'>
+							<a
+								className='header__link'
 								href='#projects'>
 								Projects
 							</a>

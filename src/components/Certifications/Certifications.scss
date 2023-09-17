@@ -1,0 +1,58 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.certifications {
+	@include layout-margin(2.4rem);
+	@include flex(column);
+	gap: 2rem;
+	justify-content: center;
+	padding-top: 10rem;
+	margin-bottom: -2rem;
+
+	@include tablet {
+		@include layout-margin(9rem);
+	}
+
+	@include desktop {
+		width: 110rem;
+		margin: 0 auto;
+		align-items: flex-start;
+		margin-bottom: 10rem;
+	}
+
+	&__info-container {
+		@include flex(column);
+		align-items: center;
+		gap: 2rem;
+		@include tablet {
+			align-items: flex-start;
+		}
+	}
+
+	&__title {
+		font-size: 2rem;
+		color: $title-color;
+	}
+
+	&__subtitle {
+		font-size: 2.4rem;
+		text-align: center;
+
+		@include desktop {
+			text-align: start;
+		}
+	}
+
+	&__badge-container {
+		@include flex(column);
+		gap: 4rem;
+		width: 100%;
+		@include tablet {
+			margin-left: 0.5rem;
+		}
+	}
+
+	&__text {
+		font-size: 1.8rem;
+	}
+}
