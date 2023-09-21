@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './Badges.scss';
-import { Badge } from '../../types';
+import { Badge } from '../../utils/types';
 
 const Badges = ({ src, badgeId, badgeHost }: Badge) => {
     const badgesRef = useRef<HTMLElement | null>(null);
@@ -28,7 +28,7 @@ const Badges = ({ src, badgeId, badgeHost }: Badge) => {
                 currentBadgesRef.removeChild(credlyBadgeDiv);
             };
         }
-    }, []);
+    }, [src, badgeId, badgeHost]);
 
     return (
         <section className='badges' ref={badgesRef}>
