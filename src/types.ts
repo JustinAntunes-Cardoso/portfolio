@@ -11,3 +11,9 @@ export interface Project {
 	github: string;
 	site: string;
 }
+
+export interface Badge {
+	src: string;
+	badgeId: string;
+	badgeHost: string;
+}
