@@ -52,6 +52,16 @@
 		}
 	}
 
+	&__badges {
+		@include flex(column);
+		justify-content: center;
+
+		@include tablet {
+			@include flex();
+			gap: 1.5rem;
+		}
+	}
+
 	&__text {
 		font-size: 1.8rem;
 	}

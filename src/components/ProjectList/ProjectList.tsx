@@ -1,6 +1,6 @@
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './ProjectList.scss';
-import { projects } from '../../constants';
+import { projects } from '../../utils/constants';
 
 const ProjectList = () => {
 	return (

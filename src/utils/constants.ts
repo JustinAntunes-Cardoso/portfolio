@@ -1,8 +1,8 @@
 import { Badge, Project } from './types';
-import sudokool from '../../assets/images/sudokool-home.png';
-import brainhive from '../../assets/images/brainhive-home.png';
-import seba from '../../assets/images/seba-home.png';
-import ktc from '../../assets/images/ktc-home.png';
+import sudokool from '../assets/images/sudokool-home.png';
+import brainhive from '../assets/images/brainhive-home.png';
+import seba from '../assets/images/seba-home.png';
+import ktc from '../assets/images/ktc-home.png';
 
 //{image: '', title: '', text: '', stack: ['', ''], github: '', site: ''}
 export const projects: Project[] = [
@@ -58,7 +58,7 @@ export const badges: Badge[] = [
 	},
 	{
 		src: '//cdn.credly.com/assets/utilities/embed.js',
-		badgeId: '5199ef7c-1c43-44e7-9a19-065a07322c12',
+		badgeId: '7cf24c39-eee5-443c-ae7a-8f5d4c22fa04',
 		badgeHost: 'https://www.credly.com',
 	},
 ];
