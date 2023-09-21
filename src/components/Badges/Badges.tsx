@@ -1,20 +1,21 @@
 import { useEffect, useRef } from 'react';
 import './Badges.scss';
+import { Badge } from '../../types';
 
-const Badges = () => {
+const Badges = ({ src, badgeId, badgeHost }: Badge) => {
     const badgesRef = useRef<HTMLElement | null>(null);
 
     useEffect(() => {
         const script = document.createElement('script');
         script.type = 'text/javascript';
         script.async = true;
-        script.src = '//cdn.credly.com/assets/utilities/embed.js';
+        script.src = src;
 
         const credlyBadgeDiv = document.createElement('div');
         credlyBadgeDiv.dataset.iframeWidth = '150';
         credlyBadgeDiv.dataset.iframeHeight = '270';
-        credlyBadgeDiv.dataset.shareBadgeId = '5199ef7c-1c43-44e7-9a19-065a07322c12';
-        credlyBadgeDiv.dataset.shareBadgeHost = 'https://www.credly.com';
+        credlyBadgeDiv.dataset.shareBadgeId = badgeId;
+        credlyBadgeDiv.dataset.shareBadgeHost = badgeHost;
 
         const currentBadgesRef = badgesRef.current; // Store the current value of the ref
 
