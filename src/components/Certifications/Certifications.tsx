@@ -1,5 +1,5 @@
 import Badges from '../Badges';
-import { badges } from '../../constants';
+import { badges } from '../../utils/constants';
 import './Certifications.scss';
 
 const Certifications = () => {
@@ -15,14 +15,16 @@ const Certifications = () => {
                 <p className='certifications__text'>
                     Each badge tells a story of dedication, growth, and expertise in various domains
                 </p>
-                {badges.map((badge, index) => {
-                    return (
-                        <Badges
-                            key={index}
-                            {...badge}
-                        />
-                    )
-                })}
+                <div className='certifications__badges'>
+                    {badges.map((badge, index) => {
+                        return (
+                            <Badges
+                                key={index}
+                                {...badge}
+                            />
+                        )
+                    })}
+                </div>
             </aside>
         </section>
     )

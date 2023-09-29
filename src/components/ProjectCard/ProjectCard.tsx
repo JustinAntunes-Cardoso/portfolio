@@ -1,5 +1,5 @@
 import './ProjectCard.scss';
-import { Project } from '../../types';
+import { Project } from '../../utils/types';
 
 type ProjectCardProps = {
 	project: Project;

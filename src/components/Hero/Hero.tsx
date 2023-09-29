@@ -22,7 +22,7 @@ import c from '../../assets/images/c.svg';
 import aws from '../../assets/images/aws.svg';
 import firebase from '../../assets/images/firebase.svg';
 import linux from '../../assets/images/linux.png';
-import { TechStack } from '../../types';
+import { TechStack } from '../../utils/types';
 
 const linkedIn = 'https://www.linkedin.com/in/justinantunescardoso/';
 const gitHub = 'https://github.com/JustinAntunes-Cardoso';
