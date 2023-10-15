@@ -1,8 +1,17 @@
-@use "./styles/partials/resets" as *;
-@use "./styles/partials/variables" as *;
+@use './styles/partials/resets' as *;
+@use './styles/partials/variables' as *;
 @use './styles/partials/typography' as *;
 
 .App {
-    width: 100%;
-    background-image: linear-gradient(to bottom right, #000000, #101010, #282828, #323232, #404040, #707070, #8e8e8e);
+	width: 100%;
+	background-image: linear-gradient(
+		to bottom right,
+		#000000,
+		#101010,
+		#282828,
+		#323232,
+		#404040,
+		#707070,
+		#8e8e8e
+	);
 }
