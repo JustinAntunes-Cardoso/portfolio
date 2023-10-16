@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Header.scss';
 import logo from '../../assets/logos/Justin-Name-Logo-Dark.png';
 import logoHover from '../../assets/logos/Justin-Name-Logo.png';
