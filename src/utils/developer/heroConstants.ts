@@ -1,3 +1,4 @@
+import { TechStack } from '../types';
 import html from '../../assets/images/html5.svg';
 import css from '../../assets/images/css3.svg';
 import js from '../../assets/images/javascript.svg';
@@ -20,41 +21,26 @@ import aws from '../../assets/images/aws.svg';
 import firebase from '../../assets/images/firebase.svg';
 import linux from '../../assets/images/linux.png';
 
-export const dev = {
-	data: {
-		title: 'Full-Stack Software Developer',
-		hero: {
-			techStack: [
-				{ src: html, title: 'HTML5' },
-				{ src: css, title: 'CSS3' },
-				{ src: js, title: 'JavaScript' },
-				{ src: ts, title: 'TypeScript' },
-				{ src: react, title: 'React' },
-				{ src: redux, title: 'Redux' },
-				{ src: jest, title: 'Jest' },
-				{ src: sass, title: 'Sass/Scss' },
-				{ src: node, title: 'Node.js' },
-				{ src: express, title: 'Express.js' },
-				{ src: mysql, title: 'MySQL' },
-				{ src: mongodb, title: 'MongoDB' },
-				{ src: postgresql, title: 'PostgreSQL' },
-				{ src: python, title: 'Python' },
-				{ src: django, title: 'Django' },
-				{ src: java, title: 'Java' },
-				{ src: sharp, title: 'C#' },
-				{ src: c, title: 'C' },
-				{ src: aws, title: 'AWS' },
-				{ src: firebase, title: 'Firebase' },
-				{ src: linux, title: 'Linux' },
-			],
-		},
-		about: {
-			image: 'src',
-			text: 'hello',
-		},
-		certifications: {
-			badges: [{ src: 'badge' }],
-		},
-		projects: [{ project: 'stuff' }],
-	},
-};
+export const techStack: TechStack[] = [
+	{ src: html, title: 'HTML5' },
+	{ src: css, title: 'CSS3' },
+	{ src: js, title: 'JavaScript' },
+	{ src: ts, title: 'TypeScript' },
+	{ src: react, title: 'React' },
+	{ src: redux, title: 'Redux' },
+	{ src: jest, title: 'Jest' },
+	{ src: sass, title: 'Sass/Scss' },
+	{ src: node, title: 'Node.js' },
+	{ src: express, title: 'Express.js' },
+	{ src: mysql, title: 'MySQL' },
+	{ src: mongodb, title: 'MongoDB' },
+	{ src: postgresql, title: 'PostgreSQL' },
+	{ src: python, title: 'Python' },
+	{ src: django, title: 'Django' },
+	{ src: java, title: 'Java' },
+	{ src: sharp, title: 'C#' },
+	{ src: c, title: 'C' },
+	{ src: aws, title: 'AWS' },
+	{ src: firebase, title: 'Firebase' },
+	{ src: linux, title: 'Linux' },
+];
