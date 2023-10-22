@@ -26,7 +26,7 @@
 
 // const linkedIn = 'https://www.linkedin.com/in/justinantunescardoso/';
 // const gitHub = 'https://github.com/JustinAntunes-Cardoso';
-
+// Tech stack object
 // const Hero = ({ techStack }: TechStack[]) => {
 
 // 	return (
