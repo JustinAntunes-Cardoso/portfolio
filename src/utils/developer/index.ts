@@ -2,8 +2,9 @@ import { techStack } from './heroConstants';
 import { about } from './aboutConstants';
 import { badges } from './certificationsConstants';
 import { projects } from './projectConstants';
+import { Data } from '../types';
 
-export const dev = {
+export const dev: Data = {
 	data: {
 		title: 'Full-Stack Software Developer',
 		hero: {
