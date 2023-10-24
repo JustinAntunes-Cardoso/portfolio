@@ -12,7 +12,7 @@ const Developer = () => {
         <>
             <Header />
             <Hero techStack={dev.data.hero.techStack} />
-            <About />
+            <About title={dev.data.title} about={dev.data.about} />
             <Certifications />
             <Projects />
             <Contact />

@@ -1,9 +1,15 @@
 import './About.scss';
 import codeBG from '../../assets/images/code-background.jpg';
-import fullStack from '../../assets/images/Full-Stack.png';
 import dev from '../../assets/images/male-technologist.png';
+import { About } from '../../utils/types';
 
-const About = () => {
+interface AboutProps {
+	title: string;
+	about: About;
+}
+
+const About: React.FC<AboutProps> = ({ title, about }) => {
+	const { image, text } = about
 	return (
 		<section
 			id='about'
@@ -19,7 +25,7 @@ const About = () => {
 				<div className='about__image-dev-container'>
 					<img
 						className='about__full-stack'
-						src={fullStack}
+						src={image}
 						alt='Full Stack'
 					/>
 					<img
@@ -32,23 +38,10 @@ const About = () => {
 			<article className='about__info-container'>
 				<h2 className='about__title'>About Me</h2>
 				<h1 className='about__subtitle'>
-					A Passionate Full-Stack Software Developer Based in Mississauga, On,
-					Canada📍
+					{`A Passionate ${title} Based in Mississauga, On,
+					Canada📍`}
 				</h1>
-				<p className='about__text'>
-					As a Full-Stack Software Developer, I possess a diverse arsenal of
-					skills in HTML, CSS, JavaScript, TypeScript, React, Redux, Jest, SCSS,
-					Node.js, Express.js, MySQL, MonogoDB, PostgreSQL, Python, Django, Java, C#, C, AWS, Firebase & Linux.
-					I'm equipped with a unique combination of technical knowledge and problem-solving
-					skills, enabling me to develop efficient and effective software
-					solutions. My ability to communicate complex technical concepts in a clear
-					and concise manner allows me to work collaboratively with teams across
-					multiple departments. My strong attention to detail ensures that all
-					code is written to the highest standard, resulting in applications that
-					are reliable, scalable, and maintainable. Overall, my versatility and
-					adaptability make me an invaluable asset to any organization seeking a
-					full-stack developer.
-				</p>
+				<p className='about__text'>{text}</p>
 			</article>
 		</section>
 	);
