@@ -1,5 +1,7 @@
+import fullStack from '../../assets/images/Full-Stack.png';
+
 export const about = {
-	image: 'src',
+	image: fullStack,
 	text: `As a Full-Stack Software Developer, I possess a diverse arsenal of
             skills in HTML, CSS, JavaScript, TypeScript, React, Redux, Jest, SCSS,
             Node.js, Express.js, MySQL, MonogoDB, PostgreSQL, Python, Django, Java, C#, C, AWS, Firebase & Linux.
