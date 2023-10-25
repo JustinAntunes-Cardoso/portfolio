@@ -1,8 +1,12 @@
 import Badges from '../Badges';
-import { badges } from '../../utils/constants';
 import './Certifications.scss';
+import { Badge } from '../../utils/types';
 
-const Certifications = () => {
+interface CertificationsProps {
+    badges: Badge[];
+}
+
+const Certifications: React.FC<CertificationsProps> = ({ badges }) => {
     return (
         <section id='certifications' className='certifications'>
             <article className='certifications__info-container'>
