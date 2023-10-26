@@ -14,7 +14,7 @@ const Developer = () => {
             <Hero techStack={dev.data.hero.techStack} />
             <About title={dev.data.title} about={dev.data.about} />
             <Certifications badges={dev.data.certifications.badges} />
-            <Projects />
+            <Projects projects={dev.data.projects} />
             <Contact />
             <Footer />
         </>
