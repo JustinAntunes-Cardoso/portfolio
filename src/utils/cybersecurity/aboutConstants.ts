@@ -1,5 +1,10 @@
+import cybersecurity from '../../assets/images/cybersecurity.png';
+
 export const aboutCyber = {
-	image: 'src',
+	image: {
+		src: cybersecurity,
+		alt: 'Cybersecurity',
+	},
 	text: `As a Cybersecurity analyst, As I embark on a journey into 
             the field of cybersecurity, I am driven by a passion for safeguarding 
             organizations and individuals from potential risks, threats, and 

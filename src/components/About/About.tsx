@@ -8,7 +8,7 @@ interface AboutProps {
 	about: About;
 }
 
-const About: React.FC<AboutProps> = ({ title, about }) => {
+const Abouts: React.FC<AboutProps> = ({ title, about }) => {
 	const { image, text } = about
 	return (
 		<section
@@ -25,8 +25,8 @@ const About: React.FC<AboutProps> = ({ title, about }) => {
 				<div className='about__image-dev-container'>
 					<img
 						className='about__full-stack'
-						src={image}
-						alt='Full Stack'
+						src={image.src}
+						alt={image.alt}
 					/>
 					<img
 						className='about__dev'
@@ -47,4 +47,4 @@ const About: React.FC<AboutProps> = ({ title, about }) => {
 	);
 };
 
-export default About;
+export default Abouts;
