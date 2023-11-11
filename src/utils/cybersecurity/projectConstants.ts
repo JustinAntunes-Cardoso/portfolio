@@ -1,8 +1,8 @@
 import { Project } from '../types';
-import sudokool from '../assets/images/sudokool-home.png';
-import brainhive from '../assets/images/brainhive-home.png';
-import seba from '../assets/images/seba-home.png';
-import ktc from '../assets/images/ktc-home.png';
+import sudokool from '../../assets/images/sudokool-home.png';
+import brainhive from '../../assets/images/brainhive-home.png';
+import seba from '../../assets/images/seba-home.png';
+import ktc from '../../assets/images/ktc-home.png';
 
 //{image: '', title: '', text: '', stack: ['', ''], github: '', site: ''}
 export const projectsCyber: Project[] = [

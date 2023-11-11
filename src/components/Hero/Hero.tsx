@@ -7,10 +7,11 @@ const linkedIn = 'https://www.linkedin.com/in/justinantunescardoso/';
 const gitHub = 'https://github.com/JustinAntunes-Cardoso';
 
 interface HeroProps {
+    title: string;
     techStack: TechStack[];
 }
 
-const Hero: React.FC<HeroProps> = ({ techStack }) => {
+const Hero: React.FC<HeroProps> = ({ title, techStack }) => {
 
     return (
         <section
@@ -26,10 +27,10 @@ const Hero: React.FC<HeroProps> = ({ techStack }) => {
                         />
                         <div className='hero__text-image-container'>
                             <div className='hero__text-container'>
-                                <h1 className='hero__title'>Full-Stack Developer</h1>
+                                <h1 className='hero__title'>{title}</h1>
                                 <p className='hero__text'>
                                     Greetings & Salutations! I'm Justin Antunes-Cardoso. An
-                                    innovative Full-Stack Software Developer based in Mississauga,
+                                    innovative {title} based in Mississauga,
                                     ON, Canada📍
                                 </p>
                             </div>

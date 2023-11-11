@@ -4,7 +4,10 @@ export interface TechStack {
 }
 
 export interface About {
-	image: string;
+	image: {
+		src: string;
+		alt: string;
+	};
 	text: string;
 }
 

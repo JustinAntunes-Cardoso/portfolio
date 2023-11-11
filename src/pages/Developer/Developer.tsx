@@ -11,7 +11,7 @@ const Developer = () => {
     return (
         <>
             <Header />
-            <Hero techStack={dev.data.hero.techStack} />
+            <Hero title={dev.data.title} techStack={dev.data.hero.techStack} />
             <About title={dev.data.title} about={dev.data.about} />
             <Certifications badges={dev.data.certifications.badges} />
             <Projects projects={dev.data.projects} />
