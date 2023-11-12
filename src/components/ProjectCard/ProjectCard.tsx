@@ -12,7 +12,7 @@ const ProjectCard = ({ project, isReverse }: ProjectCardProps) => {
 			<div className='project-card__image-container'>
 				<a
 					target='_blank'
-					href={project.site == '' ? project.github : project.site}
+					href={project.site === '' ? project.github : project.site}
 					rel='noreferrer'>
 					<img
 						className='project-card__image'
