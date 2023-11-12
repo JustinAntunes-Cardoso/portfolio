@@ -23,27 +23,28 @@
 		gap: 8rem;
 	}
 
-    &__image-container {
-        width: 100%;
-        height: auto;
-        background-color: hsla(0,0%,46%,.2);
-        border-radius: 1.7rem;
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
-        overflow: hidden;
-    }
+	&__image-container {
+		width: 100%;
+		height: auto;
+		background-color: hsla(0, 0%, 46%, 0.2);
+		border-radius: 1.7rem;
+		box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+		overflow: hidden;
+	}
 
 	&__image {
+		aspect-ratio: 16 / 12;
 		height: auto;
 		width: 100%;
-        transition: transform 10s ease-in-out 0s;
+		// transition: transform 10s ease-in-out 0s;
 
-        &:hover {
-            transform: translateY(-74%);
+		// &:hover {
+		// 	transform: translateY(-74%);
 
-			@include desktop {
-				transform: translateY(-60%);
-			}
-        }
+		// 	@include desktop {
+		// 		transform: translateY(-60%);
+		// 	}
+		// }
 	}
 
 	&__info-container {
@@ -70,7 +71,7 @@
 
 	&__stack-container {
 		@include flex();
-        flex-wrap: wrap;
+		flex-wrap: wrap;
 		gap: 1.2rem;
 		justify-content: center;
 
@@ -86,15 +87,15 @@
 
 	&__stack {
 		box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
-        padding: 1rem;
-        background-color: $stack-color;
+		padding: 1rem;
+		background-color: $stack-color;
 	}
 
 	&__link-container {
-        @include flex();
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
+		@include flex();
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
 
 		@include tablet {
 			margin-top: 2rem;
@@ -105,17 +106,15 @@
 			gap: 2.5rem;
 		}
 
-        & a {
-            @include flex();
-            gap: 0.5rem;
-            align-items: center;
-        
-            & i {
-                font-size: 2.2rem;
-            }
-        
-        }
+		& a {
+			@include flex();
+			gap: 0.5rem;
+			align-items: center;
 
+			& i {
+				font-size: 2.2rem;
+			}
+		}
 	}
 
 	&__link {

@@ -12,7 +12,7 @@ const ProjectCard = ({ project, isReverse }: ProjectCardProps) => {
 			<div className='project-card__image-container'>
 				<a
 					target='_blank'
-					href={project.site}
+					href={project.site == '' ? project.github : project.site}
 					rel='noreferrer'>
 					<img
 						className='project-card__image'
@@ -41,13 +41,17 @@ const ProjectCard = ({ project, isReverse }: ProjectCardProps) => {
 							<i className='project-card__link fa-brands fa-github'></i>
 						</a>
 					)}
-					<a
-						target='_blank'
-						href={project.site}
-						rel='noreferrer'>
-						<h4 className='project-card__link'>Live Demo</h4>
-						<i className='project-card__link fa-solid fa-arrow-up-right-from-square'></i>
-					</a>
+					{project.site === '' ? (
+						<></>
+					) : (
+						<a
+							target='_blank'
+							href={project.site}
+							rel='noreferrer'>
+							<h4 className='project-card__link'>Live Demo</h4>
+							<i className='project-card__link fa-solid fa-arrow-up-right-from-square'></i>
+						</a>
+					)}
 				</div>
 			</div>
 		</div>
