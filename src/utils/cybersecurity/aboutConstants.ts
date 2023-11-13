@@ -10,13 +10,13 @@ export const aboutCyber = {
             organizations and individuals from potential risks, threats, and 
             vulnerabilities. My goal as a cybersecurity professional is to actively 
             identify and analyze these challenges, ensuring the confidentiality, 
-            integrity, and availability of critical assets. I am highly motivated 
+            integrity, and availability of critical assets. \n I am highly motivated 
             and detail-oriented, with a deep commitment to maintaining a strong 
             security posture. I believe that a robust security framework is not 
             just a technical requirement but a fundamental necessity to protect 
             sensitive information and mitigate risk. My strengths lie in my 
             dedication to this cause, and my values revolve around integrity, 
-            accountability, and continuous learning. I am enthusiastic about the 
+            accountability, and continuous learning. \n I am enthusiastic about the 
             role cybersecurity plays in maintaining a secure digital environment, 
             and I am excited to contribute my skills and knowledge to the betterment 
             of organizations and society. As I continue to refine my understanding 

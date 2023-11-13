@@ -37,7 +37,7 @@ const ProjectCard = ({ project, isReverse }: ProjectCardProps) => {
 							target='_blank'
 							href={project.github}
 							rel='noreferrer'>
-							<h4 className='project-card__link'>Code</h4>
+							<h4 className='project-card__link'>Project</h4>
 							<i className='project-card__link fa-brands fa-github'></i>
 						</a>
 					)}
