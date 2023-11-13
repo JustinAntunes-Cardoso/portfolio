@@ -1,22 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Developer from './pages/Developer/Developer';
+import Security from './pages/Security/Security';
+
 import './App.scss';
-import Header from './components/Header/Header';
-import Hero from './components/Hero/Hero';
-import About from './components/About/About';
-import Certifications from './components/Certifications/Certifications';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <About />
-      <Certifications />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Security />} />
+          <Route path="/dev" element={<Developer />} />
+          <Route path="/cyber" element={<Security />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

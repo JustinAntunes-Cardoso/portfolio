@@ -1,8 +1,12 @@
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './ProjectList.scss';
-import { projects } from '../../utils/constants';
+import { Project } from '../../utils/types';
 
-const ProjectList = () => {
+interface ProjectsProps {
+	projects: Project[];
+}
+
+const ProjectList: React.FC<ProjectsProps> = ({ projects }) => {
 	return (
 		<article className='project-list'>
 			{projects.map((project, index) => {
