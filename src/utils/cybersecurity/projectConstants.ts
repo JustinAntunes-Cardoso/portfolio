@@ -1,6 +1,7 @@
 import { Project } from '../types';
 
 import sudokool from '../../assets/images/sudokool.png';
+import worldMap from '../../assets/images/world_map.png';
 import healthCare from '../../assets/images/healthcare.jpg';
 import dataCentre from '../../assets/images/data-centre.jpg';
 import techOffice from '../../assets/images/tech-office.jpg';
@@ -18,12 +19,20 @@ export const projectsCyber: Project[] = [
 		site: 'https://sudokool.vercel.app/',
 	},
 	{
+		image: worldMap,
+		title: 'RDP Brutefore Attacks 🌎⚔️',
+		text: 'Exploring Azure: Creating a Windows VM Honeypot, Disabling Firewall, Luring Attackers, Gathering RDP Logs with PowerShell, and Visualizing Worldwide Attacks in Sentinel',
+		stack: ['Microsoft Sentinel', 'Azure', 'Windows', 'PowerShell', 'KQL'],
+		github: 'https://github.com/JustinAntunes-Cardoso/Honeypot-Azure-Sentinel',
+		site: '',
+	},
+	{
 		image: healthCare,
 		title: 'Healthcare Hiccups - Ransomware Saga 🏥💸',
 		text: "In the wake of a ruthless ransomware attack, a U.S. healthcare clinic's vital files were encrypted by malicious actors using targeted phishing emails. Explore the aftermath and resilient response as the clinic's operations faced a critical standstill.",
 		stack: ['Wireshark', 'Tcpdump', 'Incident Response', 'NIST SP 800-61'],
 		github:
-			'https://github.com/JustinAntunes-Cardoso/Botium-Toys-Security-Audit',
+			'https://github.com/JustinAntunes-Cardoso/Healthcare-Incident-Journal',
 		site: '',
 	},
 	{
